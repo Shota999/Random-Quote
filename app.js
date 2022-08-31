@@ -8,7 +8,7 @@ const url = "https://api.quotable.io/random";
 
 let getQuote = () => {
     fetch(url)
-        .then((data) => data.json())
+        .then((item) => item.json())
         .then((item) => {
             quote.innerText = item.content;
             author.innerText = item.author;
